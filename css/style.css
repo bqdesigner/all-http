@@ -1,0 +1,81 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 15rem;
+  background-color: #cd1a38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-fluid h1 {
+  font-family: 'Calistoga', cursive;
+  color: white;
+}
+
+.container-fluid span {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.introducao {
+  width: 100%;
+  background-color: white;
+  margin-top: -2rem !important;
+  padding-top: .5rem !important;
+  border-bottom: 1px solid rgba(205, 26, 56, 0.2);
+}
+
+.introducao h2:first-child {
+  font-family: 'Calistoga', cursive;
+  color: #cd1a38;
+  margin: 2rem 0 2rem 0;
+}
+
+.introducao p {
+  font-family: 'Montserrat', sans-serif;
+  color: #191819;
+  line-height: 180%;
+  margin-bottom: 2rem;
+}
+
+code {
+  color: white !important;
+  background: #191819;
+  padding: 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.content {
+  margin: 2rem 0 2rem 0;
+  border-bottom: 1px solid rgba(205, 26, 56, 0.2);
+}
+
+.content h2 {
+  font-family: 'Calistoga', cursive;
+  color: #cd1a38;
+  margin: 2rem 0 2rem 0;
+}
+
+.content p {
+  font-family: 'Montserrat', sans-serif;
+  color: #191819;
+  line-height: 180%;
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */

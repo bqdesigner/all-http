@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Tudo sobre HTTP - Bruno de Queirós </title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header class="container-fluid">
+            <div class="container">
+                <h1> Tudo sobre o protocolo HTTP </h1>
+                <span> Por Bruno Queirós </span>
+            </div>
+        </header>
+        <section class="container">
+            <div class="introducao col-md-12">
+                <h2> Introdução </h2>
+                <p>
+                    Hypertext Transfer Protocol <code>HTTP</code> é um protocolo de camada de aplicação para transmissão de documentos hipermídia, como o HTML. Foi desenvolvido para comunicação entre navegadores web e servidores web, porém pode ser utilizado para outros propósitos também. É também um protocolo sem estado ou stateless protocol, que significa que o servidor não mantem nenhum dado entre duas requisições. Apesar de ser frequentemente baseado em uma camada <code>TCP/IP</code>, pode ser utilizado em qualquer camada de transporte confiável, ou seja, um protocolo que não perde mensagens silenciosamente como o <code>UDP</code>.
+                </p>
+            </div>
+        </section>
+        <section class="container content">
+            <h2> Uma visão geral... </h2>
+            <div class="row mb-3">
+                <div class="col-12 col-md-3 p-2">
+                    <p>
+                        <code>HTTP</code> é um protocolo que permite a obtenção de recursos, tais como documentos HTML. É a base de qualquer troca de dados na Web e um protocolo cliente-servidor, o que significa que as requisições são iniciadas pelo destinatário, geralmente um navegador da Web.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <p>
+                        Clientes e servidores se comunicam trocando mensagens individuais (em oposição a um fluxo de dados). As mensagens enviadas pelo cliente, geralmente um navegador da Web, são chamadas de solicitações <code>(requests)</code>, ou também requisições, e as mensagens enviadas pelo servidor como resposta são chamadas de respostas <code>(responses)</code>.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <p>
+                        O HTTP é um protocolo <br><code>cliente-servidor</code>: as requisições são enviados por uma entidade, o agente-usuário (ou um proxy em nome dele). A maior parte do tempo, o agente-usuário é um navegador da Web, mas pode ser qualquer coisa, como por exemplo um robô que rastreia a Web para preencher e manter um índice de mecanismo de pesquisa.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <p>
+                        Na realidade, existem muitos outros computadores entre o navegador e o servidor que está tratando a requisição: existem roteadores, modems e muito mais. Graças ao modelo de camadas da Web <code>layers</code>, essas funcionalidades estão escondidas nas camadas de rede e transporte, respectivamente. O HTTP está no topo da camada de aplicação.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+    
+</body>
+</html>
