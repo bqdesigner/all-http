@@ -26,6 +26,7 @@
                 </p>
             </div>
         </section>
+
         <section class="container content">
             <h2> Uma visão geral... </h2>
             <div class="row mb-3">
@@ -52,9 +53,35 @@
                         Na realidade, existem muitos outros computadores entre o navegador e o servidor que está tratando a requisição: existem roteadores, modems e muito mais. Graças ao modelo de camadas da Web <code>layers</code>, essas funcionalidades estão escondidas nas camadas de rede e transporte, respectivamente. O HTTP está no topo da camada de aplicação.
                     </p>
                 </div>
-
             </div>
         </section>
+
+        <section class="container content">
+            <h2> O que pode ser controlado pelo HTTP? </h2>
+            <div class="row mb-3">
+                <div class="col-12 col-md-4 p-2">
+                    <h3> Cache </h3>
+                    <p>
+                        A forma como documentos são cacheados pode ser controlada pelo HTTP. O servidor pode instruir proxies, e clientes, ao que cachear e por quanto tempo. O cliente pode instruir proxies de cache intermediários a ignorar o documento armazenado.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 p-0 p-2">
+                    <h3> Autenticação </h3>
+                    <p>
+                        Algumas páginas podem ser protegidas para que apenas usuários específicos possam acessá-la. Autenticação básica pode ser provida pelo HTTP, usando tanto o cabeçalho WWW-Authenticate e similares, quanto configurando uma sessão específica usando cookies HTTP.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 p-0 p-2">
+                    <h3> Sessões </h3>
+                    <p>
+                        Usando os cookies HTTP, permite que você crie vincule às requisições o estado do servidor. Isso cria as sessões, apesar do protocolo HTTP básico não manter estado. Isso é útil não só para os carrinhos de compras de e-commerces, mas também para qualquer site que permita customização das respostas a nível de usuário.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
     
     
