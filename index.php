@@ -82,6 +82,32 @@
             </div>
         </section>
 
+        <section class="container content">
+            <h2> Aspectos básicos do HTTP </h2>
+            <div class="row mb-3">
+                <div class="col-12 col-md-4 p-2">
+                    <h3> HTTP é simples </h3>
+                    <p>
+                        Mesmo com mais complexidade introduzida no HTTP/2.0 por encapsular mensagens HTTP em quadros (frames), o HTTP foi projetado para ser simples e legível às pessoas. As mensagens HTTP podem ser lidas e entendidas por qualquer um, provendo uma maior facilidade para desenvolvimento e testes, e reduzir a complexidade para os estudantes.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 p-0 p-2">
+                    <h3> HTTP é extensível </h3>
+                    <p>
+                        Introduzidos no HTTP/1.0, os cabeçalhos HTTP fazem com que este protocolo seja fácil para estender e usá-lo para experimentos. Novas funcionalidades podem até ser introduzidas pelo simples acordo entre um cliente e um servidor sobre a nova semântica de um cabeçalho.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 p-0 p-2">
+                    <h3> HTTP não tem estados, mas tem sessões </h3>
+                    <p>
+                     HTTP é sem estado: não existe uma relação entre duas requisições sendo feitas através da mesma conexão. Isso traz um problema imediato para usuários que interagem com algumas páginas de forma coerente, por exemplo, usando um carrinho de compras de e-commerces*. Mas como o fundamento básico do HTTP é não manter estados, cookies HTTP permitem que as sessões tenham estados. Usando a extensibilidade dos cabeçalhos, os cookies são adicionados ao fluxo do HTTP, permitindo que a criação de sessão em cada requisição HTTP compartilhem o mesmo contexto, ou o mesmo estado.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
     
     
