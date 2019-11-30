@@ -57,6 +57,32 @@
         </section>
 
         <section class="container content">
+            <h2> Aspectos básicos do HTTP </h2>
+            <div class="row mb-3">
+                <div class="col-12 col-md-4 p-2">
+                    <h3> HTTP é simples </h3>
+                    <p>
+                        Mesmo com mais complexidade introduzida no HTTP/2.0 por encapsular mensagens HTTP em quadros (frames), o HTTP foi projetado para ser simples e legível às pessoas. As mensagens HTTP podem ser lidas e entendidas por qualquer um, provendo uma maior facilidade para desenvolvimento e testes, e reduzir a complexidade para os estudantes.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 p-0 p-2">
+                    <h3> HTTP é extensível </h3>
+                    <p>
+                        Introduzidos no HTTP/1.0, os cabeçalhos HTTP fazem com que este protocolo seja fácil para estender e usá-lo para experimentos. Novas funcionalidades podem até ser introduzidas pelo simples acordo entre um cliente e um servidor sobre a nova semântica de um cabeçalho.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4 p-0 p-2">
+                    <h3> HTTP não tem estados, mas tem sessões </h3>
+                    <p>
+                     HTTP é sem estado: não existe uma relação entre duas requisições sendo feitas através da mesma conexão. Isso traz um problema imediato para usuários que interagem com algumas páginas de forma coerente, por exemplo, usando um carrinho de compras de e-commerces*. Mas como o fundamento básico do HTTP é não manter estados, cookies HTTP permitem que as sessões tenham estados. Usando a extensibilidade dos cabeçalhos, os cookies são adicionados ao fluxo do HTTP, permitindo que a criação de sessão em cada requisição HTTP compartilhem o mesmo contexto, ou o mesmo estado.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container content">
             <h2> O que pode ser controlado pelo HTTP? </h2>
             <div class="row mb-3">
                 <div class="col-12 col-md-4 p-2">
@@ -83,26 +109,37 @@
         </section>
 
         <section class="container content">
-            <h2> Aspectos básicos do HTTP </h2>
+            <h2> Fluxo HTTP </h2>
+            <p>
+                Quando o cliente quer comunicar com um servidor, este sendo um servidor final ou um proxy, ele realiza os seguintes passos:
+            </p>
             <div class="row mb-3">
-                <div class="col-12 col-md-4 p-2">
-                    <h3> HTTP é simples </h3>
+                <div class="col-12 col-md-3 p-2">
+                    <h3> 1 </h3>
                     <p>
-                        Mesmo com mais complexidade introduzida no HTTP/2.0 por encapsular mensagens HTTP em quadros (frames), o HTTP foi projetado para ser simples e legível às pessoas. As mensagens HTTP podem ser lidas e entendidas por qualquer um, provendo uma maior facilidade para desenvolvimento e testes, e reduzir a complexidade para os estudantes.
+                        Abre uma conexão TCP: A conexão TCP será usada para enviar uma requisição, ou várias, e receber uma resposta. O cliente pode abrir uma nova conexão, reusar uma conexão existente, ou abrir várias conexões aos servidores.
                     </p>
                 </div>
 
-                <div class="col-12 col-md-4 p-0 p-2">
-                    <h3> HTTP é extensível </h3>
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> 2 </h3>
                     <p>
-                        Introduzidos no HTTP/1.0, os cabeçalhos HTTP fazem com que este protocolo seja fácil para estender e usá-lo para experimentos. Novas funcionalidades podem até ser introduzidas pelo simples acordo entre um cliente e um servidor sobre a nova semântica de um cabeçalho.
+                        Envia uma mensagem HTTP: mensagens HTTP (antes do HTTP/2.0) são legíveis às pessoas. Com o HTTP/2.0, essas mensagens simples são encapsuladas dentro de quadros (frames), tornando-as impossíveis de ler diretamente, mas o princípio se mantém o mesmo.
                     </p>
                 </div>
 
-                <div class="col-12 col-md-4 p-0 p-2">
-                    <h3> HTTP não tem estados, mas tem sessões </h3>
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> 3 </h3>
                     <p>
-                     HTTP é sem estado: não existe uma relação entre duas requisições sendo feitas através da mesma conexão. Isso traz um problema imediato para usuários que interagem com algumas páginas de forma coerente, por exemplo, usando um carrinho de compras de e-commerces*. Mas como o fundamento básico do HTTP é não manter estados, cookies HTTP permitem que as sessões tenham estados. Usando a extensibilidade dos cabeçalhos, os cookies são adicionados ao fluxo do HTTP, permitindo que a criação de sessão em cada requisição HTTP compartilhem o mesmo contexto, ou o mesmo estado.
+                        Lê a resposta do servidor
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> 4 </h3>
+                    <p>
+                    Fecha ou reutiliza a conexão para requisições futuras.<br/><br/>
+                    Se a linha de montagem (pipelining) estiver ativada, várias requisições podem ser enviadas sem que a primeira resposta seja totalmente recebida. A linha de montagem HTTP se provou difícil de ser implementada nas redes existentes, onde peças antigas de software coexistem com versões modernas. A linha de montagem HTTP tem sido substituída no HTTP/2.0 com multiplexação mais robusta de requisições dentro de um quadro (frame).
                     </p>
                 </div>
             </div>
