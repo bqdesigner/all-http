@@ -144,9 +144,15 @@
                 </div>
             </div>
         </section>
+        <section class="container content">
+            <h2> Usando com o método GET - 1 </h2>
+            <div class="col-12" id="get1">
+
+            </div>
+        </section>
 
     </main>
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/api.js"></script>
 </body>
 </html>
