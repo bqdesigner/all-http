@@ -144,6 +144,83 @@
                 </div>
             </div>
         </section>
+
+        <section class="container content">
+            <h2> Métodos de requisição HTTP </h2>
+            <p>
+                O protocolo HTTP define um conjunto de métodos de requisição responsáveis por indicar a ação a ser executada para um dado recurso. Embora esses métodos possam ser descritos como substantivos, eles também são comumente referenciados como HTTP Verbs <code>(Verbos HTTP)</code>. Cada um deles implementa uma semântica diferente, mas alguns recursos são compartilhados por um grupo deles, como por exemplo, qualquer método de requisição pode ser do tipo safe, idempotent ou cacheable.
+            </p>
+            <div class="row mb-3">
+                <div class="col-12 col-md-3 p-2">
+                    <h3> GET </h3>
+                    <p>
+                        O método GET solicita a representação de um recurso específico. Requisições utilizando o método GET devem retornar apenas dados.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> HEAD </h3>
+                    <p>
+                        O método HEAD solicita uma resposta de forma idêntica ao método GET, porém sem conter o corpo da resposta.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> POST </h3>
+                    <p>
+                        O método POST é utilizado para submeter uma entidade a um recurso específico, frequentemente causando uma mudança no estado do recurso ou efeitos colaterais no servidor.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> PUT </h3>
+                    <p>
+                        O método PUT substitui todas as atuais representações do recurso de destino pela carga de dados da requisição.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12 col-md-3 p-2">
+                    <h3> DELETE </h3>
+                    <p>
+                        O método DELETE remove um recurso específico.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> CONNECT </h3>
+                    <p>
+                        O método CONNECT estabelece um túnel para o servidor identificado pelo recurso de destino.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> OPTION </h3>
+                    <p>
+                        O método OPTIONS é usado para descrever as opções de comunicação com o recurso de destino.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3 p-0 p-2">
+                    <h3> TRACE </h3>
+                    <p>
+                        O método TRACE executa um teste de chamada loop-back junto com o caminho para o recurso de destino.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-12 col-md-3 p-2">
+                    <h3> PATCH </h3>
+                    <p>
+                        O método PATCH é utilizado para aplicar modificações parciais em um recurso.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
         <a href="api-rest.php">
             <section class="container-fluid link-api">
                 <p> Veja os exemplos usando o resreq.in como API REST. </p>
