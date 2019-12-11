@@ -146,4 +146,25 @@ a .link-api p {
   font-family: 'Montserrat', sans-serif;
   font-size: .8rem;
 }
+
+#method3, #method4, #method6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#method3 span, #method4 span, #method6 span {
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */

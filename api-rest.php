@@ -20,12 +20,62 @@
             </section>
         </a>
         <section class="container content">
-            <h2> Usando com o método GET - 1 </h2>
+            <h2> Usando com o método GET - 1 - Listar usuários </h2>
             <span id="resp-req-1" class="resp-req"> </span>
             <div id="method1" class="row py-5"> </div>
-            <!-- <h2> Usando com o método GET - 2 </h2>
+
+            <h2> Usando com o método GET - 2 - Usuário simples não encontrado </h2>
             <span id="resp-req-2" class="resp-req"> </span>
-            <div id="method2" class="row py-5"> </div> -->
+            <div id="method2" class="row py-5"> </div>
+
+            <h2> Usando com o método POST - 3 - Criando um usuário </h2>
+            <span id="resp-req-3" class="resp-req"> </span>
+            <div id="method3" class="row py-5">
+                <label> Nome </label>
+                <span id="nome-mt3"></span>
+
+                <label> Job </label>
+                <span id="job-mt3"></span>
+
+                <label> ID </label>
+                <span id="id-mt3"></span>
+
+                <label> Criado em </label>
+                <span id="create-mt3"></span>
+            </div>
+
+            <h2> Usando com o método PUT - 4 - Atualizar usuário </h2>
+            <span id="resp-req-4" class="resp-req"> </span>
+            <div id="method4" class="row py-5">
+                <label> Nome </label>
+                <span id="nome-mt4"></span>
+
+                <label> Job </label>
+                <span id="job-mt4"></span>
+
+                <label> Atualizado em </label>
+                <span id="att-mt4"></span>
+
+            </div>
+
+            <h2> Usando com o método DELETE - 5 - Apagando usuário </h2>
+            <span id="resp-req-5" class="resp-req"> </span>
+            <div id="method5" class="row py-5"> </div>
+
+            <h2> Usando com o método PATCH - 6 </h2>
+            <span id="resp-req-6" class="resp-req"> </span>
+            <div id="method6" class="row py-5">
+                <label> Nome </label>
+                <span id="nome-mt6"></span>
+
+                <label> Job </label>
+                <span id="job-mt6"></span>
+
+                <label> Atualizado em </label>
+                <span id="att-mt6"></span>
+
+            </div>
+
         </section>
     </main>
 

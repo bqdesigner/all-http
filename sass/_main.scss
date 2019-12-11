@@ -112,3 +112,13 @@ a {
         font-size: .8rem;
     }
 }
+#method3, #method4, #method6 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    span {
+        font-weight: bold;
+    }
+}
