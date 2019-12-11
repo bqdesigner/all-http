@@ -84,4 +84,66 @@ code {
   line-height: 180%;
   text-align: left;
 }
+
+a {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: #f9f9f9;
+}
+
+a .link-api {
+  width: 100%;
+  height: 300px;
+  background-color: #cd1a38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a .link-api p {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+.resp-req {
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(205, 26, 56, 0.5);
+  padding: .5rem;
+  color: white;
+  border-radius: 4px;
+}
+
+.infoCard {
+  text-align: center;
+}
+
+.infoCard img {
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+.infoCard h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.infoCard span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+}
 /*# sourceMappingURL=style.css.map */

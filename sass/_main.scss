@@ -68,3 +68,47 @@ code {
     }
     border-bottom: 1px solid rgba(205, 26, 56, .2);
 }
+a {
+    transition: all 0.3s ease-in-out 0s;
+    &:hover {
+        text-decoration: none !important;
+        color: #f9f9f9;
+    }
+    .link-api {
+        width: 100%;
+        height: 300px;
+        background-color: #cd1a38;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+        }
+    }
+}
+
+.resp-req {
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(205, 26, 56, .5); 
+    padding: .5rem;
+    color: white;
+    border-radius: 4px;
+}
+.infoCard {
+    text-align: center;
+    img {
+        border-radius: 100px;
+        margin-bottom: 1rem;
+    }
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+    }
+    span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: .8rem;
+    }
+}
